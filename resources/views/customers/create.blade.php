@@ -1,11 +1,10 @@
 <!-- resources/views/customers/create.blade.php -->
 <x-app-layout>
-  <x-slot name="header">
-    <h2 class="font-semibold text-xl text-gray-800">Tambah Pelanggan</h2>
-  </x-slot>
-
+ <x-navbar/>
+  
   <div class="py-6">
     <div class="max-w-3xl mx-auto sm:px-6 lg:px-8 bg-white p-6 rounded-lg shadow">
+      <h2 class="font-semibold text-xl text-gray-800">Tambah Pelanggan</h2>
       @if($errors->any())
         <div class="mb-4 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
           <ul class="list-disc pl-5">

@@ -1,4 +1,5 @@
 <?php
+// Path: routes/web.php
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;

@@ -1,11 +1,10 @@
 <!-- resources/views/customers/edit.blade.php -->
 <x-app-layout>
-  <x-slot name="header">
-    <h2 class="font-semibold text-xl text-gray-800">Edit Pelanggan</h2>
-  </x-slot>
-
+<x-navbar/>
+  
   <div class="py-6">
     <div class="max-w-3xl mx-auto sm:px-6 lg:px-8 bg-white p-6 rounded-lg shadow">
+      <h2 class="font-semibold text-xl text-gray-800">Edit Pelanggan</h2>
       <form method="POST" action="{{ route('customers.update', $customer) }}" class="space-y-4">
         @csrf @method('PUT')
         <div>
